@@ -3,6 +3,7 @@ import {
   PlayCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { Droppable } from "react-beautiful-dnd";
 
 interface ITaskItem {
   content: string;
@@ -10,7 +11,7 @@ interface ITaskItem {
 
 const TaskItem = ({ content }: ITaskItem) => {
   return (
-    <li className="bg-white rounded p-2 cursor-pointer">
+    <div className="bg-white rounded p-2 cursor-pointer">
       <div className="flex justify-between items-center">
         <div className="flex gap-x-1 items-center">
           <CheckCircleIcon className="w-4 h-auto" />
@@ -23,7 +24,7 @@ const TaskItem = ({ content }: ITaskItem) => {
       <div className="flex justify-end">
         <PlayCircleIcon className="w-4 h-auto" />
       </div>
-    </li>
+    </div>
   );
 };
 

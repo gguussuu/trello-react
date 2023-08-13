@@ -8,9 +8,9 @@ function App() {
       <main className="p-5 bg-slate-400 rounded">
         <h2 className="text-white font-bold text-2xl mb-5">Project Kanban</h2>
         <div className="flex gap-x-5 items-start">
-          {TaskData.map(({ title, id, taskList }) => (
-            <Container title={title} key={id} taskList={taskList} />
-          ))}
+          {/* {TaskData.map(({ title, id, taskList }) => ( */}
+          <Container title={"title"} key={"id"} />
+          {/* ))} */}
         </div>
       </main>
     </div>

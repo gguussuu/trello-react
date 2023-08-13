@@ -8,6 +8,16 @@ export const TaskData = [
         content: "new task",
         id: "todo1",
       },
+      {
+        order: 1,
+        content: "new task",
+        id: "todo2",
+      },
+      {
+        order: 1,
+        content: "new task",
+        id: "todo3",
+      },
     ],
   },
   {
